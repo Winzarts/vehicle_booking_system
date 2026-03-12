@@ -1,0 +1,82 @@
+[
+    {
+        "Field": "id_pemesanan",
+        "Type": "bigint(20) unsigned",
+        "Null": "NO",
+        "Key": "PRI",
+        "Default": null,
+        "Extra": "auto_increment"
+    },
+    {
+        "Field": "id_kendaraan",
+        "Type": "bigint(20) unsigned",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "id_driver",
+        "Type": "bigint(20) unsigned",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "dipesan_oleh",
+        "Type": "bigint(20) unsigned",
+        "Null": "YES",
+        "Key": "MUL",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "tanggal_keberangkatan",
+        "Type": "datetime",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "tanggal_selesai",
+        "Type": "datetime",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "destinasi",
+        "Type": "text",
+        "Null": "YES",
+        "Key": "",
+        "Default": null,
+        "Extra": ""
+    },
+    {
+        "Field": "status",
+        "Type": "enum('pending','disetujui','ditolak')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "pending",
+        "Extra": ""
+    },
+    {
+        "Field": "tanggal_pemesanan",
+        "Type": "datetime",
+        "Null": "NO",
+        "Key": "",
+        "Default": "current_timestamp()",
+        "Extra": ""
+    },
+    {
+        "Field": "driver_status",
+        "Type": "enum('pending','accepted','rejected')",
+        "Null": "NO",
+        "Key": "",
+        "Default": "pending",
+        "Extra": ""
+    }
+]
